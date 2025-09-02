@@ -1,14 +1,125 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>eikon parcel starter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="scss/main.scss" />
-  </head>
-  <body>
-    <h1>Hello world</h1>
+  <html data-theme="light">
+    <head>
+      <meta charset="utf-8" />
+      <title>eikon parcel starter</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="scss/main.scss" />
+      <script src="js/main.js" type="module"></script>
+    </head>
+    <body>
+      <header>
+        <div class="container-header">
+          <div class="row">
+            <div class="col-7 col-lg-2"><a href="#">ATLAS DIVIN</a></div>
+            <div class="col-5 col-lg-10">
+              <nav>
+                <ul>
+                  <li>Mes favoris</li>
+                  <li>Dieu du jour</li>
+                  <li>Dieux populaires</li>
+                  <li>
+                    <button
+                      type="button"
+                      id="dark-mode-btn"
+                      class="header-dark-mode-btn"
+                    >
+                      passer au dark mode
+                    </button>
+                    <button
+                      type="button"
+                      id="light-mode-btn"
+                      class="header-light-mode-btn"
+                    >
+                      passer au light mode
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="row">
+          <div class="col-8 col-lg-5">
+            <h2>Voir les dieux des panthéons</h2>
+          </div>
+        </div>
+        <section>
+          <div class="container-section">
+            <div class="row">
+              <div class="col-12 col-lg-9">
+                <h2>Dieu du jour</h2>
+                <h3>Bacchus</h3>
+                <p>Dieu romain du vin</p>
+                <p>
+                  Egalement Dieu de l'ivresse, des débordements, de la nature et
+                  des festivités.
+                </p>
+                <p>
+                  Bacchus est un dieu romain correspondant à Dionysos dans
+                  la mythologie grecque. Les Romains utilisaient Bacchus comme
+                  un autre nom de Liber Pater, un dieu latin de la fécondité.
+                </p>
+                <div class="fleche">
+                  <p><a href="#">En savoir plus</a></p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_113_915)">
+                      <path
+                        d="M5 12H19"
+                        stroke="#515050"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M15 16L19 12"
+                        stroke="#515050"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M15 8L19 12"
+                        stroke="#515050"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_113_915">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="row">
+            <div class="col-7">
+              <h2>Panthéons populaires</h2>
+              <a href="#"><h3>Panthéon Grec</h3></a>
+              <a href="#"><h3>Panthéon égyptien</h3></a>
+              <a href="#"><h3>Panthéon nordique</h3></a>
+              <a href="#"><h3>Panthéon romain</h3></a>
+            </div>
+          </div>
+        </section>
+      </main>
 
-    <script src="js/main.js" type="module"></script>
-  </body>
+      <script src="js/main.js" type="module"></script>
+    </body>
+  </html>
 </html>
