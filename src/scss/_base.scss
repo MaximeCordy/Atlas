@@ -16,6 +16,8 @@ a {
 img,
 video {
   display: block;
+  max-width: 305px;
+  max-height: 216px;
 }
 
 .row + .row {
