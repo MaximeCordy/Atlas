@@ -26,12 +26,20 @@
       <header>
         <div class="container">
           <div class="row">
-            <div class="col-3">
+            <div class="col-7">
               <a class="header-logo" href="#">ATLAS DIVIN</a>
             </div>
-            <div class="col-5 col-lg-4">
+            <div class="col-5">
+              <div class="burger" id="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+
+            <div class="col-4 col-lg-4">
               <nav>
-                <ul>
+                <ul id="menu">
                   <li>Mes favoris</li>
                   <li>Dieu du jour</li>
                   <li>Dieux populaires</li>
@@ -134,160 +142,172 @@
                 <h2>Panthéons populaires</h2>
                 <div class="boutonb">
                   <p class="populaires">Panthéon Grec</p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <g clip-path="url(#clip0_49_435)">
-                      <path
-                        d="M5 12H19"
-                        stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M15 16L19 12"
-                        stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M15 8L19 12"
-                        stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_49_435">
-                        <rect width="24" height="24" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
+                  <div class="svgs">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      class="svgs"
+                    >
+                      <g clip-path="url(#clip0_49_435)">
+                        <path
+                          d="M5 12H19"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M15 16L19 12"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M15 8L19 12"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_49_435">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
                 </div>
                 <div class="boutonj">
                   <div class="populaires">Panthéon égyptien</div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <g clip-path="url(#clip0_49_435)">
-                      <path
-                        d="M5 12H19"
-                        stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M15 16L19 12"
-                        stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M15 8L19 12"
-                        stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_49_435">
-                        <rect width="24" height="24" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
+                  <div class="svgs">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      class="svgs"
+                    >
+                      <g clip-path="url(#clip0_49_435)">
+                        <path
+                          d="M5 12H19"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M15 16L19 12"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M15 8L19 12"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_49_435">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
                 </div>
 
                 <div class="boutonv filter">
                   <div class="populaires">Panthéon nordique</div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <g clip-path="url(#clip0_49_435)">
-                      <path
-                        d="M5 12H19"
-                        stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M15 16L19 12"
-                        stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M15 8L19 12"
-                        stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_49_435">
-                        <rect width="24" height="24" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
+                  <div class="svgs">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      class="svgs"
+                    >
+                      <g clip-path="url(#clip0_49_435)">
+                        <path
+                          d="M5 12H19"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M15 16L19 12"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M15 8L19 12"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_49_435">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
                 </div>
                 <div class="boutonr">
                   <div class="populaires">Panthéon romain</div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <g clip-path="url(#clip0_49_435)">
-                      <path
-                        d="M5 12H19"
-                        stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M15 16L19 12"
-                        stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M15 8L19 12"
-                        stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_49_435">
-                        <rect width="24" height="24" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
+                  <div class="svgs">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      class="svgs"
+                    >
+                      <g clip-path="url(#clip0_49_435)">
+                        <path
+                          d="M5 12H19"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M15 16L19 12"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M15 8L19 12"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_49_435">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
                 </div>
               </section>
             </div>
@@ -296,6 +316,22 @@
                 <div class="col-6 col-lg-4">
                   <div class="cardblue">
                     <img src="../img/athena.png" alt="athena" />
+                    <div class="favorite">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="22"
+                        viewBox="0 0 16 22"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.37868 1.37868C1.94129 0.816071 2.70435 0.5 3.5 0.5H12.5C13.2956 0.5 14.0587 0.816071 14.6213 1.37868C15.1839 1.94129 15.5 2.70435 15.5 3.5V20.75C15.5 21.0453 15.3267 21.3132 15.0572 21.4342C14.7878 21.5552 14.4725 21.5068 14.2517 21.3106L8 15.7535L1.74827 21.3106C1.52753 21.5068 1.21218 21.5552 0.942758 21.4342C0.673333 21.3132 0.5 21.0453 0.5 20.75V3.5C0.5 2.70435 0.816071 1.94129 1.37868 1.37868ZM3.5 2C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V19.0799L7.50173 14.1894C7.78589 13.9369 8.21411 13.9369 8.49827 14.1894L14 19.0799V3.5C14 3.10218 13.842 2.72064 13.5607 2.43934C13.2794 2.15804 12.8978 2 12.5 2H3.5Z"
+                          fill="#A3D7FF"
+                        />
+                      </svg>
+                    </div>
                     <h3><div class="titleblue">Athéna</div></h3>
                     <div class="spacingtext">
                       <div class="spacing">
@@ -320,6 +356,23 @@
                 <div class="col-6 col-lg-4">
                   <div class="cardred">
                     <img src="../img/mars.png" alt="mars" />
+                    <div class="favorite">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="22"
+                        viewBox="0 0 16 22"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.37868 1.37868C1.94129 0.816071 2.70435 0.5 3.5 0.5H12.5C13.2956 0.5 14.0587 0.816071 14.6213 1.37868C15.1839 1.94129 15.5 2.70435 15.5 3.5V20.75C15.5 21.0453 15.3267 21.3132 15.0572 21.4342C14.7878 21.5552 14.4725 21.5068 14.2517 21.3106L8 15.7535L1.74827 21.3106C1.52753 21.5068 1.21218 21.5552 0.942758 21.4342C0.673333 21.3132 0.5 21.0453 0.5 20.75V3.5C0.5 2.70435 0.816071 1.94129 1.37868 1.37868ZM3.5 2C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V19.0799L7.50173 14.1894C7.78589 13.9369 8.21411 13.9369 8.49827 14.1894L14 19.0799V3.5C14 3.10218 13.842 2.72064 13.5607 2.43934C13.2794 2.15804 12.8978 2 12.5 2H3.5Z"
+                          fill="#F7F43E"
+                        />
+                      </svg>
+                    </div>
+
                     <h3><div class="titlered">Mars</div></h3>
                     <div class="spacingtext">
                       <div class="spacing">
@@ -344,7 +397,24 @@
                 <div class="col-6 col-lg-4">
                   <div class="cardyellow">
                     <img src="../img/ra.png" alt="ra" />
+                    <div class="favorite">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="22"
+                        viewBox="0 0 16 22"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.37868 1.37868C1.94129 0.816071 2.70435 0.5 3.5 0.5H12.5C13.2956 0.5 14.0587 0.816071 14.6213 1.37868C15.1839 1.94129 15.5 2.70435 15.5 3.5V20.75C15.5 21.0453 15.3267 21.3132 15.0572 21.4342C14.7878 21.5552 14.4725 21.5068 14.2517 21.3106L8 15.7535L1.74827 21.3106C1.52753 21.5068 1.21218 21.5552 0.942758 21.4342C0.673333 21.3132 0.5 21.0453 0.5 20.75V3.5C0.5 2.70435 0.816071 1.94129 1.37868 1.37868ZM3.5 2C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V19.0799L7.50173 14.1894C7.78589 13.9369 8.21411 13.9369 8.49827 14.1894L14 19.0799V3.5C14 3.10218 13.842 2.72064 13.5607 2.43934C13.2794 2.15804 12.8978 2 12.5 2H3.5Z"
+                          fill="#F7F43E"
+                        />
+                      </svg>
+                    </div>
                     <h3><div class="titleyellow">Ra</div></h3>
+
                     <div class="spacingtext">
                       <div class="spacing">
                         <h4>Panthéon égyptien</h4>
@@ -369,6 +439,22 @@
                 <div class="col-6 col-lg-4">
                   <div class="cardgreen">
                     <img src="../img/freya.png" alt="freya" />
+                    <div class="favorite">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="22"
+                        viewBox="0 0 16 22"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.37868 1.37868C1.94129 0.816071 2.70435 0.5 3.5 0.5H12.5C13.2956 0.5 14.0587 0.816071 14.6213 1.37868C15.1839 1.94129 15.5 2.70435 15.5 3.5V20.75C15.5 21.0453 15.3267 21.3132 15.0572 21.4342C14.7878 21.5552 14.4725 21.5068 14.2517 21.3106L8 15.7535L1.74827 21.3106C1.52753 21.5068 1.21218 21.5552 0.942758 21.4342C0.673333 21.3132 0.5 21.0453 0.5 20.75V3.5C0.5 2.70435 0.816071 1.94129 1.37868 1.37868ZM3.5 2C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V19.0799L7.50173 14.1894C7.78589 13.9369 8.21411 13.9369 8.49827 14.1894L14 19.0799V3.5C14 3.10218 13.842 2.72064 13.5607 2.43934C13.2794 2.15804 12.8978 2 12.5 2H3.5Z"
+                          fill="#76E5B5"
+                        />
+                      </svg>
+                    </div>
                     <h3><div class="titlegreen">Freya</div></h3>
                     <div class="spacingtext">
                       <div class="spacing">
@@ -393,6 +479,22 @@
                 <div class="col-6 col-lg-4">
                   <div class="cardgreen">
                     <img src="../img/loki.png" alt="loki" />
+                    <div class="favorite">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="22"
+                        viewBox="0 0 16 22"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.37868 1.37868C1.94129 0.816071 2.70435 0.5 3.5 0.5H12.5C13.2956 0.5 14.0587 0.816071 14.6213 1.37868C15.1839 1.94129 15.5 2.70435 15.5 3.5V20.75C15.5 21.0453 15.3267 21.3132 15.0572 21.4342C14.7878 21.5552 14.4725 21.5068 14.2517 21.3106L8 15.7535L1.74827 21.3106C1.52753 21.5068 1.21218 21.5552 0.942758 21.4342C0.673333 21.3132 0.5 21.0453 0.5 20.75V3.5C0.5 2.70435 0.816071 1.94129 1.37868 1.37868ZM3.5 2C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V19.0799L7.50173 14.1894C7.78589 13.9369 8.21411 13.9369 8.49827 14.1894L14 19.0799V3.5C14 3.10218 13.842 2.72064 13.5607 2.43934C13.2794 2.15804 12.8978 2 12.5 2H3.5Z"
+                          fill="#76E5B5"
+                        />
+                      </svg>
+                    </div>
                     <h3><div class="titlegreen">Loki</div></h3>
                     <div class="spacingtext">
                       <div class="spacing">
@@ -417,6 +519,22 @@
                 <div class="col-6 col-lg-4">
                   <div class="cardred">
                     <img src="../img/fortuna.png" alt="fortuna" />
+                    <div class="favorite">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="22"
+                        viewBox="0 0 16 22"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.37868 1.37868C1.94129 0.816071 2.70435 0.5 3.5 0.5H12.5C13.2956 0.5 14.0587 0.816071 14.6213 1.37868C15.1839 1.94129 15.5 2.70435 15.5 3.5V20.75C15.5 21.0453 15.3267 21.3132 15.0572 21.4342C14.7878 21.5552 14.4725 21.5068 14.2517 21.3106L8 15.7535L1.74827 21.3106C1.52753 21.5068 1.21218 21.5552 0.942758 21.4342C0.673333 21.3132 0.5 21.0453 0.5 20.75V3.5C0.5 2.70435 0.816071 1.94129 1.37868 1.37868ZM3.5 2C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V19.0799L7.50173 14.1894C7.78589 13.9369 8.21411 13.9369 8.49827 14.1894L14 19.0799V3.5C14 3.10218 13.842 2.72064 13.5607 2.43934C13.2794 2.15804 12.8978 2 12.5 2H3.5Z"
+                          fill="#F7F43E"
+                        />
+                      </svg>
+                    </div>
                     <h3><div class="titlered">Fortuna</div></h3>
                     <div class="spacingtext">
                       <div class="spacing">
@@ -442,6 +560,22 @@
                 <div class="col-6 col-lg-4">
                   <div class="cardblue">
                     <img src="../img/artemis.png" alt="artemis" />
+                    <div class="favorite">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="22"
+                        viewBox="0 0 16 22"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.37868 1.37868C1.94129 0.816071 2.70435 0.5 3.5 0.5H12.5C13.2956 0.5 14.0587 0.816071 14.6213 1.37868C15.1839 1.94129 15.5 2.70435 15.5 3.5V20.75C15.5 21.0453 15.3267 21.3132 15.0572 21.4342C14.7878 21.5552 14.4725 21.5068 14.2517 21.3106L8 15.7535L1.74827 21.3106C1.52753 21.5068 1.21218 21.5552 0.942758 21.4342C0.673333 21.3132 0.5 21.0453 0.5 20.75V3.5C0.5 2.70435 0.816071 1.94129 1.37868 1.37868ZM3.5 2C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V19.0799L7.50173 14.1894C7.78589 13.9369 8.21411 13.9369 8.49827 14.1894L14 19.0799V3.5C14 3.10218 13.842 2.72064 13.5607 2.43934C13.2794 2.15804 12.8978 2 12.5 2H3.5Z"
+                          fill="#A3D7FF"
+                        />
+                      </svg>
+                    </div>
                     <h3><div class="titleblue">Artémis</div></h3>
                     <div class="spacingtext">
                       <div class="spacing">
@@ -466,6 +600,22 @@
                 <div class="col-6 col-lg-4">
                   <div class="cardyellow">
                     <img src="../img/anubis.png" alt="anubis" />
+                    <div class="favorite">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="22"
+                        viewBox="0 0 16 22"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.37868 1.37868C1.94129 0.816071 2.70435 0.5 3.5 0.5H12.5C13.2956 0.5 14.0587 0.816071 14.6213 1.37868C15.1839 1.94129 15.5 2.70435 15.5 3.5V20.75C15.5 21.0453 15.3267 21.3132 15.0572 21.4342C14.7878 21.5552 14.4725 21.5068 14.2517 21.3106L8 15.7535L1.74827 21.3106C1.52753 21.5068 1.21218 21.5552 0.942758 21.4342C0.673333 21.3132 0.5 21.0453 0.5 20.75V3.5C0.5 2.70435 0.816071 1.94129 1.37868 1.37868ZM3.5 2C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V19.0799L7.50173 14.1894C7.78589 13.9369 8.21411 13.9369 8.49827 14.1894L14 19.0799V3.5C14 3.10218 13.842 2.72064 13.5607 2.43934C13.2794 2.15804 12.8978 2 12.5 2H3.5Z"
+                          fill="#F7F43E"
+                        />
+                      </svg>
+                    </div>
                     <h3><div class="titleyellow">Anubis</div></h3>
                     <div class="spacingtext">
                       <div class="spacing">
@@ -494,6 +644,22 @@
                 <div class="col-6 col-lg-4">
                   <div class="cardblue">
                     <img src="../img/zeus.png" alt="zeus" />
+                    <div class="favorite">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="22"
+                        viewBox="0 0 16 22"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.37868 1.37868C1.94129 0.816071 2.70435 0.5 3.5 0.5H12.5C13.2956 0.5 14.0587 0.816071 14.6213 1.37868C15.1839 1.94129 15.5 2.70435 15.5 3.5V20.75C15.5 21.0453 15.3267 21.3132 15.0572 21.4342C14.7878 21.5552 14.4725 21.5068 14.2517 21.3106L8 15.7535L1.74827 21.3106C1.52753 21.5068 1.21218 21.5552 0.942758 21.4342C0.673333 21.3132 0.5 21.0453 0.5 20.75V3.5C0.5 2.70435 0.816071 1.94129 1.37868 1.37868ZM3.5 2C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V19.0799L7.50173 14.1894C7.78589 13.9369 8.21411 13.9369 8.49827 14.1894L14 19.0799V3.5C14 3.10218 13.842 2.72064 13.5607 2.43934C13.2794 2.15804 12.8978 2 12.5 2H3.5Z"
+                          fill="#A3D7FF"
+                        />
+                      </svg>
+                    </div>
                     <h3><div class="titleblue">Zeus</div></h3>
                     <div class="spacingtext">
                       <div class="spacing">
@@ -519,6 +685,22 @@
                 <div class="col-6 col-lg-4">
                   <div class="cardred">
                     <img src="../img/lucifer.png" alt="lucifer" />
+                    <div class="favorite">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="22"
+                        viewBox="0 0 16 22"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.37868 1.37868C1.94129 0.816071 2.70435 0.5 3.5 0.5H12.5C13.2956 0.5 14.0587 0.816071 14.6213 1.37868C15.1839 1.94129 15.5 2.70435 15.5 3.5V20.75C15.5 21.0453 15.3267 21.3132 15.0572 21.4342C14.7878 21.5552 14.4725 21.5068 14.2517 21.3106L8 15.7535L1.74827 21.3106C1.52753 21.5068 1.21218 21.5552 0.942758 21.4342C0.673333 21.3132 0.5 21.0453 0.5 20.75V3.5C0.5 2.70435 0.816071 1.94129 1.37868 1.37868ZM3.5 2C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V19.0799L7.50173 14.1894C7.78589 13.9369 8.21411 13.9369 8.49827 14.1894L14 19.0799V3.5C14 3.10218 13.842 2.72064 13.5607 2.43934C13.2794 2.15804 12.8978 2 12.5 2H3.5Z"
+                          fill="#F8A7A7"
+                        />
+                      </svg>
+                    </div>
                     <h3><div class="titlered">Lucifer</div></h3>
                     <div class="spacingtext">
                       <div class="spacing">
@@ -543,6 +725,22 @@
                 <div class="col-6 col-lg-4">
                   <div class="cardgreen">
                     <img src="../img/hel.png" alt="hel" />
+                    <div class="favorite">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="22"
+                        viewBox="0 0 16 22"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.37868 1.37868C1.94129 0.816071 2.70435 0.5 3.5 0.5H12.5C13.2956 0.5 14.0587 0.816071 14.6213 1.37868C15.1839 1.94129 15.5 2.70435 15.5 3.5V20.75C15.5 21.0453 15.3267 21.3132 15.0572 21.4342C14.7878 21.5552 14.4725 21.5068 14.2517 21.3106L8 15.7535L1.74827 21.3106C1.52753 21.5068 1.21218 21.5552 0.942758 21.4342C0.673333 21.3132 0.5 21.0453 0.5 20.75V3.5C0.5 2.70435 0.816071 1.94129 1.37868 1.37868ZM3.5 2C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V19.0799L7.50173 14.1894C7.78589 13.9369 8.21411 13.9369 8.49827 14.1894L14 19.0799V3.5C14 3.10218 13.842 2.72064 13.5607 2.43934C13.2794 2.15804 12.8978 2 12.5 2H3.5Z"
+                          fill="#76E5B5"
+                        />
+                      </svg>
+                    </div>
                     <h3><div class="titlegreen">Hel</div></h3>
                     <div class="spacingtext">
                       <div class="spacing">
@@ -567,6 +765,22 @@
                 <div class="col-6 col-lg-4">
                   <div class="cardyellow">
                     <img src="../img/isis.png" alt="isis" />
+                    <div class="favorite">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="22"
+                        viewBox="0 0 16 22"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.37868 1.37868C1.94129 0.816071 2.70435 0.5 3.5 0.5H12.5C13.2956 0.5 14.0587 0.816071 14.6213 1.37868C15.1839 1.94129 15.5 2.70435 15.5 3.5V20.75C15.5 21.0453 15.3267 21.3132 15.0572 21.4342C14.7878 21.5552 14.4725 21.5068 14.2517 21.3106L8 15.7535L1.74827 21.3106C1.52753 21.5068 1.21218 21.5552 0.942758 21.4342C0.673333 21.3132 0.5 21.0453 0.5 20.75V3.5C0.5 2.70435 0.816071 1.94129 1.37868 1.37868ZM3.5 2C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V19.0799L7.50173 14.1894C7.78589 13.9369 8.21411 13.9369 8.49827 14.1894L14 19.0799V3.5C14 3.10218 13.842 2.72064 13.5607 2.43934C13.2794 2.15804 12.8978 2 12.5 2H3.5Z"
+                          fill="#F7F43E"
+                        />
+                      </svg>
+                    </div>
                     <h3><div class="titleyellow">Isis</div></h3>
                     <div class="spacingtext">
                       <div class="spacing">
@@ -621,6 +835,7 @@
                 </li>
               </ul>
             </div>
+
             <div class="col-5">
               <ul>
                 <li>

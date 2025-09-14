@@ -1,0 +1,54 @@
+footer {
+  background: var(--Background-components, #bcbfc3);
+  padding: 2rem 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #2c2c2c;
+}
+
+footer .col-7 ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: flex-start;
+}
+
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* pour mobile */
+}
+
+footer .col-5 ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 50%;
+}
+
+li a {
+  text-decoration: none;
+}
+
+footer .container > .row > .row {
+  flex: 0 0 100%;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #aaa; /* la barre séparatrice visible */
+}
+
+/* 2) Option : si tu veux garder aussi la barre sous la liste de gauche */
+footer .col-7 ul {
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
