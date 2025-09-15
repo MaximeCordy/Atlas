@@ -1,54 +1,72 @@
 footer {
-  background: var(--Background-components, #bcbfc3);
-  padding: 2rem 0;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  color: #2c2c2c;
-}
-
-footer .col-7 ul {
+  background: var(--color-bghf);
+  color: var(--color-text-secondary);
+  font-family: "Bubbler One";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   display: flex;
+  padding: 40px 80px;
   flex-direction: column;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  align-items: flex-start;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
 }
 
-footer .row {
+.textfooter {
+  color: var(--color-text-secondary);
+  font-family: "Bubbler One";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-text-secondary);
+  display: flex;
+  text-align: center;
+}
+
+.forflex {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap; /* pour mobile */
+  align-items: center;
+  align-self: stretch;
+  text-decoration: none;
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  list-style: none;
+  color: var(--color-text-secondary);
+}
+.resaux {
+  text-decoration: none;
+  list-style: none;
 }
 
-footer .col-5 ul {
-  display: flex;
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  align-items: flex-end;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin-top: 50%;
 }
 
-li a {
+ul li {
+  list-style: none;
   text-decoration: none;
 }
 
-footer .container > .row > .row {
-  flex: 0 0 100%;
-  width: 100%;
-  box-sizing: border-box;
-  margin-top: 1rem;
-  padding-top: 1rem;
-  border-top: 1px solid #aaa; /* la barre séparatrice visible */
+ul li::marker {
+  content: none;
 }
 
-/* 2) Option : si tu veux garder aussi la barre sous la liste de gauche */
-footer .col-7 ul {
-  border-bottom: 1px solid #aaa;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
+@media (max-width: 800px) {
+  .liens ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1 0 0;
+  }
 }
