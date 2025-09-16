@@ -319,9 +319,24 @@ h5 {
   top: 12px;
 }
 
-a {
+li {
   transition: transform 0.3s ease-in-out;
 }
-a:hover {
-  transform: scale(1.2);
+li:hover {
+  transform: scale(1.1);
+}
+
+.fleche p {
+  transition: transform 0.3s ease-in-out;
+}
+.fleche p:hover {
+  transform: scale(1.1);
+}
+
+.populaire :hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+.populaire :hover {
+  transform: scale(1.05);
 }

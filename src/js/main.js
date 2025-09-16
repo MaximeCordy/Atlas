@@ -30,3 +30,12 @@ toggle.addEventListener("change", () => {
   document.body.classList.toggle("dark-mode");
   document.body.classList.toggle("light-mode");
 });
+
+const hamMenu = document.querySelector(".ham-menu");
+
+const offScreenMenu = document.querySelector(".off-screen-menu");
+
+hamMenu.addEventListener("click", () => {
+  hamMenu.classList.toggle("active");
+  offScreenMenu.classList.toggle("active");
+});
