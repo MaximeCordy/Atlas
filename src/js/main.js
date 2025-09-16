@@ -1,5 +1,3 @@
-// On commence par créer deux variables JavaScript,
-// pour sélectionner chacune un des deux boutons (light et dark)
 const toggleDarkModeBtn = document.querySelector("#dark-mode-btn");
 const toggleLightModeBtn = document.querySelector("#light-mode-btn");
 
@@ -17,25 +15,12 @@ toggleLightModeBtn.addEventListener("click", function () {
   document.querySelector("html").setAttribute("data-theme", "light");
 });
 
-const burger = document.getElementById("burger");
-const menu = document.getElementById("menu");
+var burger = document.querySelector(".burger");
+var menu = document.querySelector(".menu");
 
-burger.addEventListener("click", () => {
-  menu.classList.toggle("active");
-  burger.classList.toggle("open");
-});
+var toggleMenu = function toggleMenu() {
+  menu.classList.toggle("is-active");
+  burger.classList.toggle("is-active");
+};
 
-const toggle = document.getElementById("modeSwitch");
-toggle.addEventListener("change", () => {
-  document.body.classList.toggle("dark-mode");
-  document.body.classList.toggle("light-mode");
-});
-
-const hamMenu = document.querySelector(".ham-menu");
-
-const offScreenMenu = document.querySelector(".off-screen-menu");
-
-hamMenu.addEventListener("click", () => {
-  hamMenu.classList.toggle("active");
-  offScreenMenu.classList.toggle("active");
-});
+burger.addEventListener("click", toggleMenu);

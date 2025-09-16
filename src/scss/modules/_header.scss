@@ -66,67 +66,94 @@ nav ul li {
   line-height: normal;
 }
 
-.off-screen-menu {
-  background-color: rgb(34, 37, 49);
-  height: 100vh;
-  width: 100%;
-  max-width: 450px;
-  position: fixed;
-  top: 0;
-  right: -450px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 3rem;
-  transition: 0.3s ease;
-}
-.off-screen-menu.active {
-  right: 0;
-}
-
 nav {
   padding: 1rem;
   display: flex;
   background-color: none;
 }
+.burger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  width: 20px;
+  height: 19px;
+}
 
-/* ham menu */
-.ham-menu {
-  height: 50px;
-  width: 40px;
-  margin-left: auto;
-  position: relative;
-}
-.ham-menu span {
-  height: 5px;
-  width: 100%;
-  background-color: var(--color-text-secondary);
-  border-radius: 25px;
+.burger div {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.3s ease;
+  width: 100%;
+  height: 3px;
+  background: var(--color-text-secondary);
+  transition: transform 0.3s, opacity 0.3s;
 }
-.ham-menu span:nth-child(1) {
-  top: 25%;
+
+.burger div:nth-child(1) {
+  top: 0;
 }
-.ham-menu span:nth-child(3) {
-  top: 75%;
+
+.burger div:nth-child(2) {
+  top: 8px;
 }
-.ham-menu.active span {
-  background-color: (var(--color-bghf));
+
+.burger div:nth-child(3) {
+  top: 16px;
 }
-.ham-menu.active span:nth-child(1) {
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
+
+.burger.is-active div:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
 }
-.ham-menu.active span:nth-child(2) {
+
+.burger.is-active div:nth-child(2) {
+  transform: translateX(100%);
   opacity: 0;
 }
-.ham-menu.active span:nth-child(3) {
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
+
+.burger.is-active div:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 5;
+  background: #ccc;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+}
+
+.menu.is-active {
+  pointer-events: auto;
+  transform: translateX(100);
+  z-index: 1;
+  max-height: 300px;
+  padding: 16px;
+}
+.menu.is-active ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (min-width: 992px) {
+  .burger {
+    display: none;
+  }
+  .menu {
+    position: static;
+    background-color: transparent;
+    transform: none;
+    padding: 0px;
+    margin-left: 20%;
+  }
+}
+
+.menu ul :hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu ul :hover {
+  transform: scale(1.05);
 }
