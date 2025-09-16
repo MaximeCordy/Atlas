@@ -318,3 +318,10 @@ h5 {
   right: 12px;
   top: 12px;
 }
+
+a {
+  transition: transform 0.3s ease-in-out;
+}
+a:hover {
+  transform: scale(1.2);
+}
