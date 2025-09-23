@@ -1,0 +1,162 @@
+<extends src="partials/base-layout.html">
+  <block name="content">
+    <div class="l-main">
+      <main class="l-container">
+        <h1 class="l-page-title">Exercices - Modification des classes</h1>
+
+        <section class="section-theory">
+          <h2>Rappel théorique</h2>
+          <a
+            href="https://www.notion.so/eikon-imd/JavaScript-2-Interagir-avec-les-classes-10c5e810eb1e43a28ea95567fa0065a3?source=copy_link"
+            target="_blank"
+            >Lien vers le support de cours sur comment interagir avec les
+            classes</a
+          >
+
+          <h3>La propriété classList</h3>
+          <p>
+            La propriété <code>classList</code> permet de manipuler facilement
+            les classes CSS d'un élément HTML. Elle offre plusieurs méthodes
+            pour ajouter, supprimer, et alterner les classes.
+          </p>
+
+          <h3>Méthodes disponibles</h3>
+
+          <h4>classList.add() - Ajouter une classe</h4>
+          <pre><code>// Ajouter une seule classe
+document.querySelector(".my-element").classList.add('nouvelle-classe');
+
+// Ajouter plusieurs classes
+document.querySelector(".my-element").classList.add('classe1', 'classe2', 'classe3');
+</code></pre>
+
+          <h4>classList.remove() - Supprimer une classe</h4>
+          <pre><code>// Supprimer une seule classe
+document.querySelector(".my-element").classList.remove('ancienne-classe');
+
+// Supprimer plusieurs classes
+document.querySelector(".my-element").classList.remove('classe1', 'classe2');
+</code></pre>
+
+          <h4>classList.toggle() - Alterner une classe</h4>
+          <pre><code>// Si la classe existe, la supprime. Sinon, l'ajoute.
+document.querySelector(".my-element").classList.toggle('classe-alternee');
+</code></pre>
+        </section>
+
+        <section>
+          <div class="l-content-wrapper">
+            <h2 class="l-h2">Consigne</h2>
+            <p>
+              Depuis <code>js/main.js</code>, écrivez le code JavaScript
+              permettant de modifier la liste des classes de chaque élément
+              selon l'indication de sa carte.
+            </p>
+          </div>
+          <div class="l-content-wrapper">
+            <h2 class="l-h2">Exemple</h2>
+            <pre><code
+          >// document.querySelector('.pizza').classList.add("perfect"); // Ma pizza est maintenant parfaite et prête à être mangée 😋</code
+        ></pre>
+          </div>
+        </section>
+
+        <section class="exercices-container" id="exercice-2">
+          <!-- Exercice 1: Ajouter une classe -->
+          <article class="pizza raw" id="pizza-to-cook" data-status="raw">
+            <h2>1 - À cuire</h2>
+            <p>🍕</p>
+            <p class="small">Ajouter la classe 'cooked'</p>
+          </article>
+
+          <!-- Exercice 2: Supprimer une classe -->
+          <article class="pizza hot burned" data-type="margherita">
+            <h2>2 - Trop cuite</h2>
+            <p>🍕</p>
+            <p class="small">Supprimer la classe 'burned'</p>
+          </article>
+
+          <!-- Exercice 3: Toggle une classe -->
+          <article class="pizza" id="pizza-special" data-premium="false">
+            <h2>3 - À illuminer</h2>
+            <p>🍕</p>
+            <p class="small">Alterner la classe 'highlighted'</p>
+          </article>
+
+          <!-- Exercice 4: Ajouter plusieurs classes -->
+          <article class="pizza basic" data-type="pizza" data-size="medium">
+            <h2>4 - Upgrade premium</h2>
+            <p>🍕</p>
+            <p class="small">Ajouter 'premium' et 'deluxe'</p>
+          </article>
+
+          <!-- Exercice 5: Remove puis add -->
+          <article class="pizza cold reheated" id="leftover-pizza">
+            <h2>5 - Réchauffer</h2>
+            <p>🍕</p>
+            <p class="small">Supprimer 'cold', ajouter 'hot'</p>
+          </article>
+
+          <h2 class="l-h2 title-advanced">Exercices avancés (optionnel)</h2>
+
+          <!-- Exercice 6: Classe conditionnelle -->
+          <article
+            class="pizza regular-size"
+            id="pizza-resize"
+            data-order="large"
+          >
+            <h2>6 - Agrandir</h2>
+            <p>🍕</p>
+            <p class="small">Remplacer 'regular-size' par 'large-size'</p>
+          </article>
+
+          <!-- Exercice 7: Multiple operations -->
+          <article
+            class="pizza unfinished raw"
+            data-vegetable="true"
+            id="veggie-pizza"
+          >
+            <h2>7 - Finaliser</h2>
+            <p>🍕</p>
+            <p class="small">
+              Supprimer 'unfinished' et 'raw', ajouter 'ready'
+            </p>
+          </article>
+
+          <!-- Exercice 8: Toggle multiple -->
+          <article class="pizza" data-type="special" data-glow="off">
+            <h2>8 - Effet spécial</h2>
+            <p>🍕</p>
+            <p class="small">Alterner 'glowing' et 'animated'</p>
+          </article>
+
+          <!-- Exercice 9: Combinaison complexe -->
+          <article
+            class="pizza standard boring"
+            id="final-pizza"
+            data-transformation="pending"
+          >
+            <h2>9 - Transformation complète</h2>
+            <p>🍕</p>
+            <p class="small">
+              Supprimer 'boring', ajouter 'amazing', alterner 'featured'
+            </p>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <footer class="l-footer">
+      <div class="l-container">
+        <p>
+          <a href="index.html">Sélecteurs</a>
+          ⬅️ Exercice précédent
+        </p>
+        <p>
+          Prochain exercice ➡️
+          <a href="eventlistener.html">Ecouteurs d'événements</a>
+        </p>
+      </div>
+    </footer>
+  </block>
+</extends>
